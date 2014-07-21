@@ -3,3 +3,4 @@ figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
 figures/l2fc_fig_pVal/l2fc_fig_pVal.png
 figures/manhattan/manhattan.png
 figures/xylose_resp_profiles/xylose_resp_profiles.png
+figures/cellulose_resp_profiles/cellulose_resp_profiles.png
