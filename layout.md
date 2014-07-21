@@ -1,2 +1,3 @@
 Supplemental Methods.tex
 figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
+figures/l2fc_fig_pVal/l2fc_fig_pVal.png
