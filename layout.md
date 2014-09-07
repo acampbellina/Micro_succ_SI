@@ -8,3 +8,4 @@ figures/cellulose_resp_profiles/cellulose_resp_profiles.png
 figures/bulk_ordination/bulk_ordination.png
 figures/l2fc_KDE/l2fc_KDE.png
 figures/RA_byday/RA_byday.png
+figures/resp_table/resp_table.png
