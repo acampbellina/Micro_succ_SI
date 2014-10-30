@@ -41,9 +41,9 @@ For each time point in the series isopycnic gradients were setup using a modifie
 Sequences were initially screened by maximum expected errors at a specific read
 length threshold \citep{23955772} which has been shown to be as effective as
 denoising with respect to removing pyrosequencing errors. Specifically, reads
-were first truncated to XXX nucleotides (nt) (all reads shorter than XXX nt
+were first truncated to 250 nucleotides (nt) (all reads shorter than 250 nt
 were discarded) and any read that exceeded a maximum expected error threshold
-of X.X was removed. After truncation and max expected error trimming, XX\% of
+of 0.5 was removed. After truncation and max expected error trimming, 87\% of
 original reads remained. Forward primer and barcode was then removed from the
 high quality, truncated reads.  Remaining reads were taxonomically annotated
 using the "UClust" taxonomic annotation framework in the QIIME software package
