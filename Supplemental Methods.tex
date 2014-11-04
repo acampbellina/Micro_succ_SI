@@ -77,13 +77,13 @@ the SSU-Align covariance models or were aligned with poor confidence (less than
 95\% of characters in a position had posterior probability alignment scores of
 at least 95\%) were masked for phylogenetic reconstruction. Additionally, the
 alignment was trimmed to coordinates such that all sequences in the alignment
-began and ended at the same positions. FastTree \cite{Price_2009} was used to
+began and ended at the same positions. FastTree \citep{Price_2009} was used to
 reconstruct the phylogeny.
 
 \subsubsection{Identifying OTUs that incorporated $^{13}$C into their DNA}
 DNA-SIP is a culture-independent approach towards defining identity-function
-connections in microbial communities \cite{Buckley_2011,Neufeld_2007,Radajewski_2003}. . Microbes are identified on the basis of
-isotope assimilation into DNA. As the bouyant density (BD) of a macromolecule is dependent on many factors in addition to stable isotope incorporation (e.g. GC-content in nucleic acids \cite{Youngblut_2014}),
+connections in microbial communities \citep{Buckley_2011,Neufeld_2007,Radajewski_2003}. . Microbes are identified on the basis of
+isotope assimilation into DNA. As the bouyant density (BD) of a macromolecule is dependent on many factors in addition to stable isotope incorporation (e.g. GC-content in nucleic acids \citep{Youngblut_2014}),
 labeled nucleic acids from one microbial population may have the same BD as unlabeled nucleic acids from another. Therefore, it is imperative to compare results of isotopic labelling to results obtained with unlabeled controls where everything mimics the experimental conditions except that unlabeled substrates are used. By contrasting heavy gradient fractions from isotopically labeled samples relative to corresponding fractions from controls, the identities of microbes with labeled nucleic acids can be
 determined 
 
@@ -91,8 +91,8 @@ We used an RNA-Seq differential expression statistical framework
 \citep{Love_2014} to find OTUs enriched in heavy fractions of labeled
 gradients relative to corresponding density fractions in control gradients
 (for review of RNA-Seq differential expression statistics applied to
-microbiome OTU count data see \citet{24699258}). We use the term
-“differential abundance” (coined by \citet{24699258}) to denote OTUs that
+microbiome OTU count data see \citet{McMurdie_2014}). We use the term
+“differential abundance” (coined by \citet{McMurdie_2014}) to denote OTUs that
 have different proportion means across sample classes (in this case the only
 sample class is labeled:control).  CsCl gradient fractions were categorized
 as "heavy" or "light". The heavy category denotes fractions with density
@@ -114,13 +114,11 @@ response to $^{13}$ treatment.
 
 \subsubsection{Community and Sequence Analysis}
 Principal coordinate ordinations depict the relationships between
-samples. Weighted Unifrac distances were
+samples. Weighted Unifrac \citep{Lozupone_2005} distances were
 used as the sample distance metric for ordination. The Phyloseq
-\citep{24699258} wrapper for Vegan \citep{vegan} (both R packages) was
-used to compute sample values along principal coordinate axes. GGplot2
-\citep{ggplot2} was used to display sample points along the first and
-second principal axes. Adonis tests \cite{Anderson_2001} were done with default
-number of permutations (1000).
+\citep{McMurdie_2013} wrapper for Vegan \cite{Dixon_2003} (both R packages) was
+used to compute sample values along principal coordinate axes. GGplot2 \cite{Wickham_2009 was used to display sample points along the first and
+second principal axes. Adonis tests \cite{Anderson_2001} were done with 1000 permutations.
 
 Code to take raw sequencing data through the presented figures (including
 download and processing of literature environmental datasets) can be
