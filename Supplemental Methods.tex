@@ -71,20 +71,20 @@ towards sample counts and are removed from downstream analyses. The
 USearch software version for cluster generation was 7.0.1090.
 
 \subsubsection{Phylogenetic analysis}
-Alignment of SSU rRNA genes was done with SSU-Align which is based on Infernal
+Alignment of OTU centroid SSU rRNA genes was done with SSU-Align which is based on Infernal
 \citep{24008419,19307242}. Columns in the alignment that were not included in
 the SSU-Align covariance models or were aligned with poor confidence (less than
 95\% of characters in a position had posterior probability alignment scores of
 at least 95\%) were masked for phylogenetic reconstruction. Additionally, the
 alignment was trimmed to coordinates such that all sequences in the alignment
 began and ended at the same positions. FastTree \citep{20224823} was used to
-build the tree.
+reconstruct the phylogeny.
 
 \subsubsection{Identifying OTUs that incorporated $^{13}$C into their DNA}
 DNA-SIP is a culture-independent approach towards defining identity-function
 connections in microbial communities \citep{Buckley_2011, 17446886,
 Radajewski_2001}. Microbes are identified on the basis of
-isotope assimilation into DNA. As the BD of a macromolecule is dependent on many factors in addition to stable isotope incorporation (e.g. GC-content in nucleic acids \citep{25139123}),
+isotope assimilation into DNA. As the bouyant density (BD) of a macromolecule is dependent on many factors in addition to stable isotope incorporation (e.g. GC-content in nucleic acids \citep{25139123}),
 labeled nucleic acids from one microbial population may have the same BD as unlabeled nucleic acids from another. Therefore, it is imperative to compare results of isotopic labelling to results obtained with unlabeled controls where everything mimics the experimental conditions except that unlabeled substrates are used. By contrasting heavy gradient fractions from isotopically labeled samples relative to corresponding fractions from controls, the identities of microbes with labeled nucleic acids can be
 determined 
 
@@ -97,15 +97,15 @@ microbiome OTU count data see \citet{24699258}). We use the term
 have different proportion means across sample classes (in this case the only
 sample class is labeled:control).  CsCl gradient fractions were categorized
 as "heavy" or "light". The heavy category denotes fractions with density
-values above X.XXX g/mL. Since we are only interested in enriched OTUs
-(labeled versus control), we used a one-sided z-test for differential
+values above 1.7125 and below 1.755 g/mL. Since we are only interested in enriched OTUs
+(labeled versus control), we used a one-sided wald-test for differential
 abundance (the null hypothesis is the labeled:control proportion mean ratio
 for an OTU is less than a selected threshold). P-values were corrected with
 the Benjamini and Hochberg method \citep{citeulike:1042553}. We selected a
-log$_{2}$ fold change null threshold of X.XX (or a labeled:control proportion
-mean ratio of X.XX). DESeq2 was used to calculate the moderated log$_{2}$
+log$_{2}$ fold change null threshold of 0.75 (or a labeled:control proportion
+mean ratio of 1.68). DESeq2 was used to calculate the moderated log$_{2}$
 fold change of labeled:control proportion mean ratios and corresponding
-standard errors. Mean ratio moderation allows for reliable ratio ranking such
+standard errors for the Wald test. Mean ratio moderation allows for reliable ratio ranking such
 that high variance and likely statistically insignificant mean ratios are
 appropriately shrunk and subsequently ranked lower than they would be as raw
 ratios. Those OTUs that exhibit a statistically significant increase in
