@@ -109,19 +109,13 @@ standard errors for the Wald test. Mean ratio moderation allows for reliable rat
 that high variance and likely statistically insignificant mean ratios are
 appropriately shrunk and subsequently ranked lower than they would be as raw
 ratios. Those OTUs that exhibit a statistically significant increase in
-proportion in heavy fractions from $^{15}$N$_{2}$-labeled samples relative to
+proportion in heavy fractions from $^{13}$C-labeled samples relative to
 corresponding controls have increased significantly in bouyant density in
-response to $^{15}$N$_{2}$ treatment.
+response to $^{13}$ treatment.
 
 \subsubsection{Community and Sequence Analysis}
-BLAST searches were done with the "blastn" program from BLAST+ toolkit
-\citep{20003500} version 2.2.29+. Default parameters were always employed and
-the BioPython \citep{19304878} BLAST+ wrapper was used to invoke the blastn
-program. Pandas \citep{citeulike:11241428} and dplyr \citep{dplyr} were used to
-parse and munge BLAST output tables.  
-
 Principal coordinate ordinations depict the relationships between
-samples at each time point. Weighted Unifrac distances were
+samples. Weighted Unifrac distances were
 used as the sample distance metric for ordination. The Phyloseq
 \citep{24699258} wrapper for Vegan \citep{vegan} (both R packages) was
 used to compute sample values along principal coordinate axes. GGplot2
@@ -129,7 +123,7 @@ used to compute sample values along principal coordinate axes. GGplot2
 second principal axes. Adonis tests \cite{Anderson_2001} were done with default
 number of permutations (1000).
 
-All code to take raw sequencing data through the presented figures (including
+Code to take raw sequencing data through the presented figures (including
 download and processing of literature environmental datasets) can be
 found at:
 
