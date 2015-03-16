@@ -1,4 +1,4 @@
-Supplemental Methods.tex
+Supplemental_Methods.tex
 figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
 figures/OTU_screening_schematic/OTU_screening_schematic.png
 figures/Percent_respired_13C/Percent_respired_13C.png
