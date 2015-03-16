@@ -1,12 +1,10 @@
-Supplemental_Methods.tex
+Supplemental_Methods.tex 
+Supplemental_notes.tex
 figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
 figures/OTU_screening_schematic/OTU_screening_schematic.png
 figures/Percent_respired_13C/Percent_respired_13C.png
-figures/l2fc_fig_pVal/l2fc_fig_pVal.png
-figures/manhattan/manhattan.png
+figures/l2fc_fig_pVal/l2fc_fig_pVal.png figures/manhattan/manhattan.png
 figures/xylose_resp_profiles/xylose_resp_profiles.png
 figures/cellulose_resp_profiles/cellulose_resp_profiles.png
-figures/bulk_ordination/bulk_ordination.png
-figures/l2fc_KDE/l2fc_KDE.png
-figures/RA_byday/RA_byday.png
-figures/resp_table/resp_table.png
+figures/bulk_ordination/bulk_ordination.png figures/l2fc_KDE/l2fc_KDE.png
+figures/RA_byday/RA_byday.png figures/resp_table/resp_table.png
