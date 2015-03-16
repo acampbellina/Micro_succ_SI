@@ -1,4 +1,3 @@
-Supplemental_Methods.tex 
 Supplemental_notes.tex
 figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
 figures/OTU_screening_schematic/OTU_screening_schematic.png
