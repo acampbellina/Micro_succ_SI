@@ -1,7 +1,62 @@
-\documentclass{article}
-\usepackage{amsfonts,amsmath,amssymb}
-\usepackage{graphicx}
-\usepackage{color}
+%% PNAStwoS.tex
+%% Sample file to use for PNAS articles prepared in LaTeX
+%% For two column PNAS articles
+%% Version1: Apr 15, 2008
+%% Version2: Oct 04, 2013
+
+%% BASIC CLASS FILE
+\documentclass[final,oneside,onecolumn,a4paper,titlepage]{pnastwo}
+%\documentclass[draft,oneside,onecolumn,a4paper,titlepage]{pnastwo}
+
+%% ADDITIONAL OPTIONAL STYLE FILES Font specification
+
+%\usepackage{pnastwoF}
+
+%\usepackage[
+%    backend=biber,
+%    style=numeric-comp,
+%    sorting=none,
+%    firstinits=true,
+%    terseinits=true,
+%    maxbibnames=5,
+%    natbib=true,
+%    doi=false,
+%    url=false, 
+%    isbn=false,
+%    eprint=false
+%]{biblatex}
+%\addbibresource{bibliography/biblio.bib}
+%
+%\renewrobustcmd*{\bibinitdelim}{-}
+%\DeclareNameAlias{sortname}{last-first}
+
+\usepackage[numbers,sort&compress]{natbib}
+
+\makeatletter %
+   \renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+\usepackage{hyperref}
+
 \usepackage{url}
 
-\bibliographystyle{plain}
+\usepackage{placeins}
+
+\usepackage{geometry} 
+
+\usepackage{multirow, array, booktabs, longtable, threeparttablex}
+
+\usepackage{array} 
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+%% OPTIONAL MACRO DEFINITIONS
+\def\s{\sigma}
+
+\newcommand{\beginsupplement}{%
+\setcounter{table}{0} \renewcommand{\thetable}{S\arabic{table}}%
+\setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}}% 
+}
+%%%%%%%%%%%%
