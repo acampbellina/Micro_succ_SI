@@ -1,6 +1,5 @@
 supplemental.tex
-figures/20140708_ConceptualFig2/20140708_ConceptualFig2.png
-figures/OTU_screening_schematic/OTU_screening_schematic.png
+figures/20150320methods_conceptual/20150320methods_conceptual.png
 figures/Percent_respired_13C/Percent_respired_13C.png
 figures/l2fc_fig_pVal/l2fc_fig_pVal.png figures/manhattan/manhattan.png
 figures/xylose_resp_profiles/xylose_resp_profiles.png
